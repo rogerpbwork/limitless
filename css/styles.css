@@ -1,11 +1,14 @@
+/* Fonts Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
-:root {
-    --main-blue: #2309AE 
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
-body {
-    background-color: var(--main-blue);
-    margin: 2.5%;
+:root {
+    --main-grey: #dedede;
+    --background-blue: #0072ef;
+    --main-blue: #2309AE;
+    background-image: linear-gradient(#2309AE 0%, #0072ef 35%, #00d4ff 80%,white 100%);
+    height: 100%;
+    padding: 1%;
 }
 
 p {
@@ -14,6 +17,7 @@ p {
 }
 
 iframe  {
+    height: 100%;
     flex-grow: 100;
     border-left: 2px solid white;
     border: 3px solid white;
@@ -29,7 +33,20 @@ h1  {
 
 .table {
     display: inline-flex;
+    flex-direction: column;
+    height: 24.5em;
     width: 50%;
+}
+
+.tableHeader {
+    background-color: #150a51;
+    border-left: 3px white solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.5%;
+    color: aliceblue;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 
 .row {
@@ -38,6 +55,7 @@ h1  {
 }
 
 #tables {
+    height: 80%;
     background-color: white;
     border-radius: 20px;
     padding: 2%;
@@ -45,5 +63,9 @@ h1  {
 
 #top {
     height: 10%;
+}
+
+#countryChart {
+    align-self: center;
 }
 
